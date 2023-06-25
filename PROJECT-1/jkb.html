@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* css reset */
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('body.jpeg');
+        color: white;
+        background-repeat:repeat-x;
+    }
+    .left{
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 35px;
+        top: 20px;
+        display:inline-block;
+
+    }
+    .left img{
+        width: 50px;
+    }
+    .left div{
+        line-height:20px;
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 33%;
+        margin:  20px auto;
+        /* border: 2px solid blue; */
+
+    }
+    .right{
+        position: absolute;
+        right: 35px;
+        top: 20px;
+        display:inline-block;
+        /* border: 2px solid green; */
+
+    }
+    .navbar li{
+        display: inline-block;
+        /* background-color:white; */
+        font-size: 17px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 35px 20px;
+        /* color: black; */
+
+    }
+    .navbar li a:hover{
+        text-decoration: underline;
+        color:red;
+    }
+    .btn{
+        color: white;
+        margin: 0px 10px;
+        padding: 5px 15px;
+        border: 2px solid gray;
+        background-color: black;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(53, 46, 37);
+    }
+    .content{
+        border: 2px solid white;
+        margin: 65px 42px;
+        padding: 100px;
+        width:30%;
+        border-radius: 20px;
+    }
+    .forms input{
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 8px;
+        margin:  3px auto;
+        border: 5px solid black;
+    }
+    .content h1{
+        text-align: center;
+    }
+    .content button{
+        display: block;
+        width: 104px;
+        margin: auto;
+    }
+</style>
+<body>
+    <header class="head">
+        <div class="left">
+            <img src="3d.png" alt="">
+            <div>Be Fit</div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Fitness Center</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+            
+
+        </div>
+        <div class="right">
+             <button class="btn">Call Us Now</button>
+             <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="content">
+        <h1>Please fill out the details</h1>
+        <form action="noaction.php">
+            <div class="forms">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="forms">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="forms">
+                <input type="text" placeholder="Enter your Gender ">
+            </div>
+            <div class="forms">
+                <input type="text" placeholder="Enter your Place">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>
+    
+</body>
+</html>
